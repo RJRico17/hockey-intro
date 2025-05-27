@@ -1,0 +1,8 @@
+extends layout.pug 
+
+block content 
+    img(src=`${team.logo}` width="10%" height="10%")
+    h1= team.name 
+    h3= team.city
+    h3= team.founded
+    p= team.arena

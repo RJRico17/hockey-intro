@@ -1,0 +1,19 @@
+extends layout.pug
+
+mixin teamCard(team)
+    .teamcard 
+        .logo 
+            img(src=`${team.logo}` width="10%" height="10%")
+        .info
+            h2
+                a(href=`/teams/${team.name}`)= team.name 
+            //- h3= team.city
+            //- h3= team.founded
+            //- ol
+            //-     for player in team.top_three_players    
+            //-         li= player
+            //- p= team.arena
+    
+block content 
+    for team in teams 
+        +teamCard(team)

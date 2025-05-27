@@ -1,4 +1,4 @@
-const penalties = [
+export const penalties = [
   {
     "name": "Hooking",
     "description": "Using the stick to restrain an opponent by placing it around them and pulling back.",
@@ -84,3 +84,5 @@ const penalties = [
     "example": "gifs/head_butting.gif"
   }
 ]
+
+export default penalties;
