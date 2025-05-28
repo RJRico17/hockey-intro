@@ -1,0 +1,10 @@
+extends layout.pug 
+
+mixin penalty(penalty) 
+    h2= penalty.name
+    h3= penalty.penalty
+    p= penalty.description 
+
+block content
+    for singlepenalty in penalty
+        +penalty(singlepenalty)

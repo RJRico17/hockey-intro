@@ -10,5 +10,5 @@ app.use(express.static('public'));
 app.use('/', hockeyRouter);
 
 app.listen(PORT,()=>{
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server is running on http://localhost:${PORT}/home`);
 })

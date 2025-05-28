@@ -1,9 +1,8 @@
 extends layout.pug 
 
 mixin penalty(penalty) 
-    h2= penalty.name
-    h3= penalty.penalty
-    p= penalty.description 
+    h2
+        a(href=`/penalties/${penalty.name}`)= penalty.name
 
 
 block content

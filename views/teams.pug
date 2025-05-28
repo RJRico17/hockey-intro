@@ -1,7 +1,7 @@
 extends layout.pug
 
 mixin teamCard(team)
-    .teamcard 
+    section(class="teamCard")
         .logo 
             img(src=`${team.logo}` width="10%" height="10%")
         .info

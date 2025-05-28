@@ -4,11 +4,17 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet" href="/css/styles.css") 
-        title Hockey Introduction Website
+        title learnHockey
     body 
         header
-            h2 Hockey Intro
-            p Learn how to watch hockey!
+            h2 learnHockey
+        nav 
+            a(href="/home") Home
+            a(href="/teams") Teams
+            a(href="/penalties") Penalties
+            form(action="search", method="post") 
+                input(type="text", name="search", placeholder="Search the site")
+                button(type="submit") Search
         
         block content
 

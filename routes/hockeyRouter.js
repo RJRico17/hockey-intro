@@ -1,25 +1,13 @@
 import {Router} from 'express';
-import penalties from '../models/penalties.js';
-import teams from '../models/teams.js';
+import { displayHome,displayPenalties,displaySinglePenalty,displaySingleTeam,displayTeams } from '../controllers/controller.js';
 
 const router = Router();
 
-router.get('/',(req,res)=>{
-    res.status(200).render('home');
-})
-
-router.get('/penalties',(req,res)=>{
-    res.status(200).render('penalties',{penalties});
-});
-
-router.get('/teams',(req,res)=>{
-    res.status(200).render('teams',{teams});
-})
-
-router.get('/teams/:teamname',(req,res)=>{
-    const team = teams.filter(t=>t.name==req.params.teamname);
-    console.log(team);
-    res.status(200).render('teaminfo',{team});
-})
+router.post('/search',displayPenalties);
+router.get('/home',displayHome);
+router.get('/penalties',displayPenalties);
+router.get('/penalties/:penaltyname',displaySinglePenalty);
+router.get('/teams',displayTeams);
+router.get('/teams/:teamname',displaySingleTeam);
 
 export default router;
