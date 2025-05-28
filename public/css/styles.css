@@ -1,6 +1,12 @@
 body {
     margin: 0;
 }
+.main {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
 .teamCard {
     border: 1px solid black;
 }
