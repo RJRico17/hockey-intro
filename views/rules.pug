@@ -1,0 +1,9 @@
+extends layout.pug 
+
+mixin ruleCard(rule) 
+    h2 
+        a(href=`rules/${rule.rule}`)= rule.rule 
+
+block content
+    for rule in rules
+        +ruleCard(rule)

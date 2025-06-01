@@ -6,5 +6,18 @@ mixin penalty(penalty)
 
 
 block content
+    h1 Common Penalties 
+    p When a team commits a penalty, the offender will go into the penalty box for a set amount of time. This enables the opposing team to have their 5 players vs the offending team's 4, Most commonly known as the "Power Play"
+    p The offending team goes on the "Penalty Kill" in where they will attempt to kill the time of a penalty without allowing a goal.
+    p The opposing team goes on the "Power Play" where they will take advantage of the time they have up a player to score a goal.
+    p A goal by the opposing team will end the Power Play, however a goal by the offending team should it occur will NOT end a Power Play.
+    p Penalties in the NHL follow the following punishments: 
+    ul 
+        li 2min. Minor 
+        li 4min. Double Minor (To be served consecutively)
+        li 5min. Major (Any goals scored during this time will NOT end the power play.)
+        li 10min. Game Misconduct 
+        li Game Ejection/Suspension
+
     each penalty in penalties   
         +penalty(penalty)

@@ -7,18 +7,40 @@ html(lang="en")
         title learnHockey
     body 
         header
-            h2 learnHockey
-        nav 
-            a(href="/home") Home
-            a(href="/teams") Teams
-            a(href="/penalties") Penalties
-            form(action="search", method="post") 
-                input(type="text", name="search", placeholder="Search the site")
-                button(type="submit") Search
+            h1(class="sitename") 
+                a(href="/home") learnHockey
+            nav(class="navbar")
+                h2
+                    a(href="/leagues") Leagues
+                h2
+                    a(href="/teams") Teams
+                h2
+                    a(href="/rules") Rules
+                h2
+                    a(href="/penalties") Penalties
+            .search
+                form(action="search", method="post") 
+                    .searchbuttons
+                        input(type="text", name="search", placeholder="Search the site")
+                        button(type="submit") Search
         
         .main
             block content
 
         footer 
-            p Created by RJ Fredrick Rico
-            p IG - Git - Linkedin
+            .selfCredit
+                h3 Created by: RJ Fredrick Rico
+                .socialIcons
+                    img(src='img/social-icons/github.png' width="40px" height="40px")
+                    img(src='img/social-icons/instagram.png' width="40px" height="40px")
+                    img(src='img/social-icons/linkedin.png' width="40px" height="40px")
+            .resourceCredit
+                h3 Resources used:
+                .resourceCredits
+                    p 
+                        | Logos: 
+                        a(href="https://www.sportslogos.net/") SportsLogos.net
+                    p 
+                        | GIFS: 
+                        a(href="https://www.nhl.com/") NHL.com
+                    p Data: OpenAI

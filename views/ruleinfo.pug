@@ -1,0 +1,10 @@
+extends layout.pug 
+
+mixin ruleCard(rule) 
+    h2= rule.rule 
+    img(src=`../${rule.example}`)
+    p= rule.description
+
+block content 
+    for singleRule in rule
+        +ruleCard(singleRule)

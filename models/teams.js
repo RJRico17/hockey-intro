@@ -5,7 +5,8 @@ export const teams = [
     "top_three_players": ["Trevor Zegras", "Troy Terry", "John Gibson"],
     "founded": 1993,
     "arena": "Honda Center",
-    "logo": "img/anaheim-ducks.png"
+    "league": "NHL",
+    "logo": "img/team-logos/anaheim-ducks.png"
   },
   {
     "name": "Boston Bruins",
@@ -13,7 +14,8 @@ export const teams = [
     "top_three_players": ["Brad Marchand", "David Pastrnak", "Charlie McAvoy"],
     "founded": 1924,
     "arena": "TD Garden",
-    "logo": "img/boston-bruins.png"
+    "league": "NHL",
+    "logo": "img/team-logos/boston-bruins.png"
   },
   {
     "name": "Buffalo Sabres",
@@ -21,7 +23,8 @@ export const teams = [
     "top_three_players": ["Rasmus Dahlin", "Tage Thompson", "Dylan Cozens"],
     "founded": 1970,
     "arena": "KeyBank Center",
-    "logo": "img/buffalo-sabres.png"
+    "league": "NHL",
+    "logo": "img/team-logos/buffalo-sabres.png"
   },
   {
     "name": "Calgary Flames",
@@ -29,7 +32,8 @@ export const teams = [
     "top_three_players": ["Jonathan Huberdeau", "Nazem Kadri", "Jacob Markstrom"],
     "founded": 1972,
     "arena": "Scotiabank Saddledome",
-    "logo": "img/calgary-flames.png"
+    "league": "NHL",
+    "logo": "img/team-logos/calgary-flames.png"
   },
   {
     "name": "Carolina Hurricanes",
@@ -37,7 +41,8 @@ export const teams = [
     "top_three_players": ["Sebastian Aho", "Andrei Svechnikov", "Brent Burns"],
     "founded": 1972,
     "arena": "PNC Arena",
-    "logo": "img/carolina-hurricanes.png"
+    "league": "NHL",
+    "logo": "img/team-logos/carolina-hurricanes.png"
   },
   {
     "name": "Chicago Blackhawks",
@@ -45,7 +50,8 @@ export const teams = [
     "top_three_players": ["Connor Bedard", "Seth Jones", "Philipp Kurashev"],
     "founded": 1926,
     "arena": "United Center",
-    "logo": "img/chicago-blackhawks.png"
+    "league": "NHL",
+    "logo": "img/team-logos/chicago-blackhawks.png"
   },
   {
     "name": "Colorado Avalanche",
@@ -53,15 +59,17 @@ export const teams = [
     "top_three_players": ["Nathan MacKinnon", "Cale Makar", "Mikko Rantanen"],
     "founded": 1972,
     "arena": "Ball Arena",
-    "logo": "img/colorado-avalanche.png"
+    "league": "NHL",
+    "logo": "img/team-logos/colorado-avalanche.png"
   },
   {
     "name": "Columbus Blue Jackets",
     "city": "Columbus, Ohio, USA",
-    "top_three_players": ["Johnny Gaudreau", "Zach Werenski", "Adam Fantilli"],
+    "top_three_players": ["Johnny Gaudreau (RIP)", "Zach Werenski", "Adam Fantilli"],
     "founded": 2000,
     "arena": "Nationwide Arena",
-    "logo": "img/columbus-blue-jackets.png"
+    "league": "NHL",
+    "logo": "img/team-logos/columbus-blue-jackets.png"
   },
   {
     "name": "Dallas Stars",
@@ -69,7 +77,8 @@ export const teams = [
     "top_three_players": ["Jason Robertson", "Roope Hintz", "Miro Heiskanen"],
     "founded": 1967,
     "arena": "American Airlines Center",
-    "logo": "img/dallas-stars.png"
+    "league": "NHL",
+    "logo": "img/team-logos/dallas-stars.png"
   },
   {
     "name": "Detroit Red Wings",
@@ -77,7 +86,8 @@ export const teams = [
     "top_three_players": ["Dylan Larkin", "Lucas Raymond", "Moritz Seider"],
     "founded": 1926,
     "arena": "Little Caesars Arena",
-    "logo": "img/detroit-red-wings.png"
+    "league": "NHL",
+    "logo": "img/team-logos/detroit-red-wings.png"
   },
   {
     "name": "Edmonton Oilers",
@@ -85,7 +95,8 @@ export const teams = [
     "top_three_players": ["Connor McDavid", "Leon Draisaitl", "Ryan Nugent-Hopkins"],
     "founded": 1972,
     "arena": "Rogers Place",
-    "logo": "img/edmonton-oilers.png"
+    "league": "NHL",
+    "logo": "img/team-logos/edmonton-oilers.png"
   },
   {
     "name": "Florida Panthers",
@@ -93,7 +104,8 @@ export const teams = [
     "top_three_players": ["Aleksander Barkov", "Matthew Tkachuk", "Sergei Bobrovsky"],
     "founded": 1993,
     "arena": "Amerant Bank Arena",
-    "logo": "img/florida-panthers.png"
+    "league": "NHL",
+    "logo": "img/team-logos/florida-panthers.png"
   },
   {
     "name": "Los Angeles Kings",
@@ -101,7 +113,8 @@ export const teams = [
     "top_three_players": ["Anze Kopitar", "Drew Doughty", "Kevin Fiala"],
     "founded": 1967,
     "arena": "Crypto.com Arena",
-    "logo": "img/los-angeles-kings.png"
+    "league": "NHL",
+    "logo": "img/team-logos/los-angeles-kings.png"
   },
   {
     "name": "Minnesota Wild",
@@ -109,7 +122,8 @@ export const teams = [
     "top_three_players": ["Kirill Kaprizov", "Mats Zuccarello", "Jared Spurgeon"],
     "founded": 2000,
     "arena": "Xcel Energy Center",
-    "logo": "img/minnesota-wild.png"
+    "league": "NHL",
+    "logo": "img/team-logos/minnesota-wild.png"
   },
   {
     "name": "Montreal Canadiens",
@@ -117,7 +131,8 @@ export const teams = [
     "top_three_players": ["Nick Suzuki", "Cole Caufield", "Juraj Slafkovsky"],
     "founded": 1909,
     "arena": "Bell Centre",
-    "logo": "img/montreal-canadiens.png"
+    "league": "NHL",
+    "logo": "img/team-logos/montreal-canadiens.png"
   },
   {
     "name": "Nashville Predators",
@@ -125,7 +140,8 @@ export const teams = [
     "top_three_players": ["Roman Josi", "Filip Forsberg", "Juuse Saros"],
     "founded": 1998,
     "arena": "Bridgestone Arena",
-    "logo": "img/nashville-predators.png"
+    "league": "NHL",
+    "logo": "img/team-logos/nashville-predators.png"
   },
   {
     "name": "New Jersey Devils",
@@ -133,7 +149,8 @@ export const teams = [
     "top_three_players": ["Jack Hughes", "Nico Hischier", "Jesper Bratt"],
     "founded": 1974,
     "arena": "Prudential Center",
-    "logo": "img/new-jersey-devils.png"
+    "league": "NHL",
+    "logo": "img/team-logos/new-jersey-devils.png"
   },
   {
     "name": "New York Islanders",
@@ -141,7 +158,8 @@ export const teams = [
     "top_three_players": ["Mathew Barzal", "Brock Nelson", "Ilya Sorokin"],
     "founded": 1972,
     "arena": "UBS Arena",
-    "logo": "img/new-york-islanders.png"
+    "league": "NHL",
+    "logo": "img/team-logos/new-york-islanders.png"
   },
   {
     "name": "New York Rangers",
@@ -149,7 +167,8 @@ export const teams = [
     "top_three_players": ["Artemi Panarin", "Mika Zibanejad", "Igor Shesterkin"],
     "founded": 1926,
     "arena": "Madison Square Garden",
-    "logo": "img/new-york-rangers.png"
+    "league": "NHL",
+    "logo": "img/team-logos/new-york-rangers.png"
   },
   {
     "name": "Ottawa Senators",
@@ -157,7 +176,8 @@ export const teams = [
     "top_three_players": ["Brady Tkachuk", "Tim Stützle", "Jake Sanderson"],
     "founded": 1992,
     "arena": "Canadian Tire Centre",
-    "logo": "img/ottawa-senators.png"
+    "league": "NHL",
+    "logo": "img/team-logos/ottawa-senators.png"
   },
   {
     "name": "Philadelphia Flyers",
@@ -165,7 +185,8 @@ export const teams = [
     "top_three_players": ["Travis Konecny", "Sean Couturier", "Carter Hart"],
     "founded": 1967,
     "arena": "Wells Fargo Center",
-    "logo": "img/philadelphia-flyers.png"
+    "league": "NHL",
+    "logo": "img/team-logos/philadelphia-flyers.png"
   },
   {
     "name": "Pittsburgh Penguins",
@@ -173,7 +194,8 @@ export const teams = [
     "top_three_players": ["Sidney Crosby", "Evgeni Malkin", "Kris Letang"],
     "founded": 1967,
     "arena": "PPG Paints Arena",
-    "logo": "img/pittsburgh-penguins.png"
+    "league": "NHL",
+    "logo": "img/team-logos/pittsburgh-penguins.png"
   },
   {
     "name": "San Jose Sharks",
@@ -181,7 +203,8 @@ export const teams = [
     "top_three_players": ["Tomas Hertl", "Logan Couture", "Mikael Granlund"],
     "founded": 1991,
     "arena": "SAP Center",
-    "logo": "img/san-jose-sharks.png"
+    "league": "NHL",
+    "logo": "img/team-logos/san-jose-sharks.png"
   },
   {
     "name": "Seattle Kraken",
@@ -189,7 +212,8 @@ export const teams = [
     "top_three_players": ["Matty Beniers", "Jared McCann", "Vince Dunn"],
     "founded": 2021,
     "arena": "Climate Pledge Arena",
-    "logo": "img/seattle-kraken.png"
+    "league": "NHL",
+    "logo": "img/team-logos/seattle-kraken.png"
   },
   {
     "name": "St. Louis Blues",
@@ -197,7 +221,8 @@ export const teams = [
     "top_three_players": ["Robert Thomas", "Jordan Kyrou", "Brandon Saad"],
     "founded": 1967,
     "arena": "Enterprise Center",
-    "logo": "img/st-louis-blues.png"
+    "league": "NHL",
+    "logo": "img/team-logos/st-louis-blues.png"
   },
   {
     "name": "Tampa Bay Lightning",
@@ -205,7 +230,8 @@ export const teams = [
     "top_three_players": ["Steven Stamkos", "Nikita Kucherov", "Victor Hedman"],
     "founded": 1992,
     "arena": "Amalie Arena",
-    "logo": "img/tampa-bay-lightning.png"
+    "league": "NHL",
+    "logo": "img/team-logos/tampa-bay-lightning.png"
   },
   {
     "name": "Toronto Maple Leafs",
@@ -213,7 +239,8 @@ export const teams = [
     "top_three_players": ["Auston Matthews", "Mitch Marner", "William Nylander"],
     "founded": 1917,
     "arena": "Scotiabank Arena",
-    "logo": "img/toronto-maple-leafs.png"
+    "league": "NHL",
+    "logo": "img/team-logos/toronto-maple-leafs.png"
   },
   {
     "name": "Vancouver Canucks",
@@ -221,7 +248,8 @@ export const teams = [
     "top_three_players": ["Elias Pettersson", "Quinn Hughes", "Thatcher Demko"],
     "founded": 1970,
     "arena": "Rogers Arena",
-    "logo": "img/vancouver-canucks.png"
+    "league": "NHL",
+    "logo": "img/team-logos/vancouver-canucks.png"
   },
   {
   "name": "Utah Mammoth",
@@ -229,7 +257,8 @@ export const teams = [
   "top_three_players": ["Clayton Keller", "Nick Schmaltz", "Jakob Chychrun"],
   "founded": 1996,
   "arena": "Delta Center",
-  "logo": "img/utah-mammoth.png"
+  "league": "NHL",
+  "logo": "img/team-logos/utah-mammoth.png"
   },
   {
     "name": "Vegas Golden Knights",
@@ -237,7 +266,8 @@ export const teams = [
     "top_three_players": ["Jack Eichel", "Mark Stone", "Alex Pietrangelo"],
     "founded": 2017,
     "arena": "T-Mobile Arena",
-    "logo": "img/vegas-golden-knights.png"
+    "league": "NHL",
+    "logo": "img/team-logos/vegas-golden-knights.png"
   },
   {
     "name": "Washington Capitals",
@@ -245,7 +275,8 @@ export const teams = [
     "top_three_players": ["Alex Ovechkin", "John Carlson", "Evgeny Kuznetsov"],
     "founded": 1974,
     "arena": "Capital One Arena",
-    "logo": "img/washington-capitals.png"
+    "league": "NHL",
+    "logo": "img/team-logos/washington-capitals.png"
   },
   {
     "name": "Winnipeg Jets",
@@ -253,7 +284,8 @@ export const teams = [
     "top_three_players": ["Kyle Connor", "Mark Scheifele", "Josh Morrissey"],
     "founded": 1999,
     "arena": "Canada Life Centre",
-    "logo": "img/winnipeg-jets.png"
+    "league": "NHL",
+    "logo": "img/team-logos/winnipeg-jets.png"
   }
 ]
 

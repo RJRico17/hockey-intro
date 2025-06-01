@@ -1,0 +1,11 @@
+extends layout.pug 
+
+mixin leagueCard(league)
+    .leagueCard
+        img(src=`${league.logo}` width="10%" height="10%")
+        h1
+            a(href=`/teams/${league.name}`)= league.name
+
+block content 
+    for league in leagues   
+        +leagueCard(league)
