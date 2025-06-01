@@ -58,14 +58,20 @@ a:visited {
     border-radius: 15px;
     background-color: rgb(245, 245, 245, 0.5);
     display: flex;
-    width: 25%;
+    width: 32%;
+    margin: 5px;
 }
 .logo {
     width: 20%;
+    padding: 10px;
 }
 .info {
     width: 80%;
     padding-left: 10px;
+    margin: auto 0 auto 0;
+}
+.info > img {
+    float: right;
 }
 
 .league_header {
@@ -105,12 +111,14 @@ a:visited {
     width: min-content;
     background-color: yellow;
     padding: 10px;
+    border-radius: 10px;
 }
 .major {
     width: min-content;
     color: white;
     background-color: rgb(164, 14, 14);
     padding: 10px;
+    border-radius: 10px;
 }
 
 footer {

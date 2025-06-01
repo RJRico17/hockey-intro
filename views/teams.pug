@@ -7,6 +7,7 @@ mixin teamCard(team)
         .info
             h2
                 a(href=`/teams/info/${team.name}`)= team.name 
+            //- img(src=`img/league-logos/${team.league}.png` width="15%" height="15%")
     
 block content 
     .team_main
