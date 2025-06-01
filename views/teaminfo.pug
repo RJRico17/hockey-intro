@@ -3,7 +3,7 @@ extends layout.pug
 mixin teamCard(team)
     .teamcard 
         .logo 
-            img(src=`../${team.logo}` width="10%" height="10%")
+            img(src=`../../${team.logo}` width="100%" height="100%")
         .info
             h2= team.name 
             h3= team.city
@@ -12,6 +12,7 @@ mixin teamCard(team)
                 for player in team.top_three_players    
                     li= player
             p= team.arena
+        iframe(width="560" height="315" src="https://www.youtube.com/embed/zzDfTD9lQrs?si=44_WDXfmsRuzqL4G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen)
 
 block content 
     for singleteam in team

@@ -1,30 +1,25 @@
 extends layout.pug
 
 mixin teamCard(team)
-    section(class="teamCard")
+    .teamCard
         .logo 
             img(src=`../${team.logo}` width="100%" height="100%")
         .info
             h2
-                a(href=`/teams/${team.name}`)= team.name 
+                a(href=`/teams/info/${team.name}`)= team.name 
     
 block content 
     .team_main
-        if leagueteams.length==0
+        if league==null
+            .league_header  
+                h1 All teams
+                p All hockey teams from USA and Canada across the NHL, PWHL, CHL, WHL, OHL and QMJHL!
+        else 
             for singleleague in league
                 .league_header
+                    img(src=`../${singleleague.logo}` width="20%" height="20%")
                     h1= singleleague.name
-                    h1 Coming soon!
-        else 
-            if league==null
-                .league_header  
-                    h1 All teams! 
-                    p All hockey teams from USA and Canada across the NHL, PWHL, CHL, WHL, OHL and QMJHL!
-            else 
-                for singleleague in league
-                    .league_header
-                        h1= singleleague.name
-                        p= singleleague.description    
-            .team_card_container
-                for team in leagueteams 
-                    +teamCard(team)
+                    p= singleleague.description    
+        .team_card_container
+            for team in leagueteams 
+                +teamCard(team)

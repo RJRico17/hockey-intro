@@ -1,11 +1,16 @@
 extends layout.pug 
 
 mixin leagueCard(league)
-    .leagueCard
-        img(src=`${league.logo}` width="10%" height="10%")
-        h1
-            a(href=`/teams/${league.name}`)= league.name
+    a(href=`/teams/${league.name}` class="leagueCard")
+        .league_card--logo
+                img(src=`${league.logo}` width="100%" height="100%")
+        .league_card--title
+                h1= league.name
 
 block content 
-    for league in leagues   
-        +leagueCard(league)
+    .league_header 
+        h1 Major American and Canadian Hockey Leagues
+        p The #[strong NHL] and #[strong PWHL] are the highest level of men and women professional ice hockey respectively. The #[strong CHL] which houses the #[strong OHL], #[strong WHL], and #[strong QMJHL] are mens major junior leagues that play primarily U20 players.
+    .all_leagues
+        for league in leagues   
+            +leagueCard(league)

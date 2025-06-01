@@ -56,11 +56,9 @@ a:visited {
 }
 .teamCard {
     border-radius: 15px;
-    background-color: whitesmoke;
+    background-color: rgb(245, 245, 245, 0.5);
     display: flex;
-    width: 20%;
-    margin: 20px;
-    padding: 5px
+    width: 25%;
 }
 .logo {
     width: 20%;
@@ -70,12 +68,50 @@ a:visited {
     padding-left: 10px;
 }
 
-/* LEAGUE HEADER */
 .league_header {
-    
+    background-color: rgb(245, 245, 245);
+    padding: 5px 5px 5px 15px;
+    border-radius: 10px;
+    margin: 15px 5px 15px 5px;
+}
+.all_leagues {
+    display: flex;
+    flex-wrap: wrap;
+}
+.leagueCard {
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245, 0.5);
+    overflow: hidden;
+    margin: 5px;
+    margin-bottom: 5em;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.league_card--logo {
+    height: 100%;
+    padding: 10px;
+}
+.league_card--title {
+    padding-left: 10px;
+    background-color: rgb(245, 245, 245);
+    border-bottom: 5px solid rgb(202, 202, 5);
+    border-top: 5px solid rgb(164, 14, 14);
 }
 
-
+/* PENALTIES */
+.minor {
+    width: min-content;
+    background-color: yellow;
+    padding: 10px;
+}
+.major {
+    width: min-content;
+    color: white;
+    background-color: rgb(164, 14, 14);
+    padding: 10px;
+}
 
 footer {
     background-color: whitesmoke;

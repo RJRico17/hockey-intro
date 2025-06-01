@@ -11,8 +11,14 @@ export const displayAllTeams = (req,res) => {
     res.status(200).render('teams',{leagueteams});
 }
 export const displayTeams = (req,res) => {
+    let leagueteams = teams;
+    if (req.params.league=="CHL") {
+        leagueteams = teams.filter(t=>t.league=="WHL"||t.league=="OHL"||t.league=="QMJHL");
+    }
+    else {
+        leagueteams = teams.filter(t=>t.league==req.params.league);
+    }
     const league = leagues.filter(l=>l.name==req.params.league);
-    const leagueteams = teams.filter(t=>t.league==req.params.league);
     res.status(200).render('teams',{leagueteams,league});
 };
 export const displayPenalties = (req,res) => {

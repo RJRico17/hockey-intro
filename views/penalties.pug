@@ -13,11 +13,15 @@ block content
     p A goal by the opposing team will end the Power Play, however a goal by the offending team should it occur will NOT end a Power Play.
     p Penalties in the NHL follow the following punishments: 
     ul 
-        li 2min. Minor 
-        li 4min. Double Minor (To be served consecutively)
-        li 5min. Major (Any goals scored during this time will NOT end the power play.)
-        li 10min. Game Misconduct 
-        li Game Ejection/Suspension
+        p.minor #[strong 2:00] Minor 
+        p.minor #[strong 4:00] Double Minor
+        p (Assessed if blood is drawn on fouls)
+        p (To be served consecutively)
+        p.major #[strong 5:00] Major 
+        p (Assessed if injury on penalty occurs)
+        p (Any goals scored during this time will NOT end the power play.)
+        p.major #[strong 10:00] Game Misconduct 
+        p.major Game Ejection/Suspension
 
     each penalty in penalties   
         +penalty(penalty)
