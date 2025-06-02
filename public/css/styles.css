@@ -48,6 +48,23 @@ a:visited {
     padding: 5px;
 }
 
+/* HOME */
+.home-top {
+    display: flex;
+    flex-direction: row;
+}
+.home-left, .home-right {
+    background-color: rgb(245, 245, 245, 0.5);
+    width: 50%;
+    margin: 10px;
+    padding: 15px;
+}
+.home-bottom {
+    width: 100%;
+}
+.home-bottom {
+    background-color: rgb(245, 245, 245, 0.5);
+}
 /* TEAMMAIN */
 .team_card_container {
     display: flex;
@@ -55,10 +72,11 @@ a:visited {
     flex-wrap: wrap;
 }
 .teamCard {
+    border-bottom: 10px solid whitesmoke;
     border-radius: 15px;
     background-color: rgb(245, 245, 245, 0.5);
     display: flex;
-    width: 32%;
+    width: 24%;
     margin: 5px;
 }
 .logo {
@@ -69,9 +87,6 @@ a:visited {
     width: 80%;
     padding-left: 10px;
     margin: auto 0 auto 0;
-}
-.info > img {
-    float: right;
 }
 
 .league_header {
@@ -102,24 +117,76 @@ a:visited {
 .league_card--title {
     padding-left: 10px;
     background-color: rgb(245, 245, 245);
-    border-bottom: 5px solid rgb(202, 202, 5);
+    border-bottom: 5px solid rgb(238, 238, 74);
     border-top: 5px solid rgb(164, 14, 14);
 }
 
 /* PENALTIES */
+.penalty-header {
+    margin-top: 15px;
+    background-color: rgb(245, 245, 245, 0.5);
+    padding: 5px 15px 15px 15px;
+}
+.penalty-container {
+    display: flex;
+}
+.penalty-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.penalty-card {
+    width: 31%;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(245, 245, 245, 0.5);
+    border-bottom: 10px solid whitesmoke;
+}
 .minor {
-    width: min-content;
     background-color: yellow;
     padding: 10px;
     border-radius: 10px;
+    margin-right: 15px;
 }
 .major {
-    width: min-content;
     color: white;
     background-color: rgb(164, 14, 14);
     padding: 10px;
     border-radius: 10px;
+    margin-right: 15px;
 }
+.penalty-main {
+    width: 70%;
+    margin: auto;
+}
+.penalty-info-card {
+    margin: 15px 0px 15px 0px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245, 0.5);
+}
+.penalty-info-gif {
+    height: 80%;
+    padding: 25px;
+}
+.penalty-info-info {
+    height: 20%;
+    padding: 10px 25px 25px 25px;
+    background-color: whitesmoke;
+    border-bottom: 5px solid rgb(238, 238, 74);
+    border-top: 5px solid rgb(164, 14, 14);
+}
+.penalty-info-info > h1 {
+
+}
+
+
+
+
+
+
 
 footer {
     background-color: whitesmoke;

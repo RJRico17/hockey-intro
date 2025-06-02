@@ -1,17 +1,21 @@
 extends layout.pug 
 
 block content 
-    h1 Welcome to learnHockey
-    p A beginner friendly site to learn all about Ice Hockey!
-    img(src='img/carlton.gif')
-
-    h1 Quick Links
-    .quickCard 
-        h2  
-            a(href='/leagues') Leagues/Teams
-    .quickCard 
-        h2  
-            a(href='/rules') Rules
-    .quickCard 
-        h2  
-            a(href='/penalties') Penalties
+    .home-top
+        .home-left
+            h1 Welcome to learnHockey
+            p A beginner friendly site to learn all about Ice Hockey!
+            img(src='img/carlton.gif')
+        .home-right
+            h1 Quick Links
+            .quickCard 
+                h2  
+                    a(href='/leagues') Leagues/Teams
+            .quickCard 
+                h2  
+                    a(href='/rules') Rules
+            .quickCard 
+                h2  
+                    a(href='/penalties') Penalties
+    .home-bottom
+        h2 Highlights:

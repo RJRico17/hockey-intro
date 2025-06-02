@@ -1,26 +1,25 @@
 extends layout.pug 
 
 mixin penalty(penalty) 
-    h2
-        a(href=`/penalties/${penalty.name}`)= penalty.name
+    .penalty-card
+        h2
+            a(href=`/penalties/${penalty.name}`)= penalty.name
 
 
 block content
-    h1 Common Penalties 
-    p When a team commits a penalty, the offender will go into the penalty box for a set amount of time. This enables the opposing team to have their 5 players vs the offending team's 4, Most commonly known as the "Power Play"
-    p The offending team goes on the "Penalty Kill" in where they will attempt to kill the time of a penalty without allowing a goal.
-    p The opposing team goes on the "Power Play" where they will take advantage of the time they have up a player to score a goal.
-    p A goal by the opposing team will end the Power Play, however a goal by the offending team should it occur will NOT end a Power Play.
-    p Penalties in the NHL are assessed the following punishments depending on serverity: 
-        p.minor #[strong 2:00] Minor 
-        p.minor #[strong 4:00] Double Minor
-        p (Assessed if blood is drawn on fouls)
-        p (To be served consecutively)
-        p.major #[strong 5:00] Major 
-        p (Assessed if injury on penalty occurs)
-        p (Any goals scored during this time will NOT end the power play.)
-        p.major #[strong 10:00] Game Misconduct 
-        p.major Game Ejection/Suspension
+    .penalty-header
+        h1 Common Penalties 
+        p When a team commits a penalty, the offender will go into the penalty box for a set amount of time. This enables the opposing team to have their 5 players vs the offending team's 4, Most commonly known as the "Power Play"
+        p The offending team goes on the "Penalty Kill" in where they will attempt to kill the time of a penalty without allowing a goal.
+        p The opposing team goes on the "Power Play" where they will take advantage of the time they have up a player to score a goal.
+        p A goal by the opposing team will end the Power Play, however a goal by the offending team should it occur will NOT end a Power Play.
+        p Penalties in the NHL are assessed the following punishments depending on serverity: 
+        .penalty-container
+            p.minor #[strong 2:00] Minor 
+            p.minor #[strong 4:00] Double Minor
+            p.major #[strong 5:00] Major 
+            p.major #[strong 10:00] Game Misconduct + Game Ejection/Suspension
 
-    each penalty in penalties   
-        +penalty(penalty)
+    .penalty-card-container
+        each penalty in penalties   
+            +penalty(penalty)

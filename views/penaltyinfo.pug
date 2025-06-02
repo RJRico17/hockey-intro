@@ -1,11 +1,15 @@
 extends layout.pug 
 
 mixin penalty(penalty) 
-    h2= penalty.name
-    img(src=`../${penalty.example}` width="100%" height="100%")
-    h3= penalty.penalty
-    p= penalty.description 
+    .penalty-info-card
+        .penalty-info-gif
+            img(src=`../${penalty.example}` width="100%" height="100%")
+        .penalty-info-info
+            h1= penalty.name
+            h3= penalty.penalty
+            h3= penalty.description 
 
 block content
-    for singlepenalty in penalty
-        +penalty(singlepenalty)
+    .penalty-main
+        for singlepenalty in penalty
+            +penalty(singlepenalty)
