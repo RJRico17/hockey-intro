@@ -9,16 +9,20 @@ mixin penalty(penalty)
 block content
     .penalty-header
         h1 Common Penalties 
-        p When a team commits a penalty, the offender will go into the penalty box for a set amount of time. This enables the opposing team to have their 5 players vs the offending team's 4, Most commonly known as the "Power Play"
-        p The offending team goes on the "Penalty Kill" in where they will attempt to kill the time of a penalty without allowing a goal.
-        p The opposing team goes on the "Power Play" where they will take advantage of the time they have up a player to score a goal.
-        p A goal by the opposing team will end the Power Play, however a goal by the offending team should it occur will NOT end a Power Play.
-        p Penalties in the NHL are assessed the following punishments depending on serverity: 
+        p When a team commits a penalty, the offender will go into the penalty box for a set amount of time. This enables the opposing team to have their 5 players vs the offending team's 4, Most commonly known as the #[strong "Power Play"]
+        p The offending team goes on the #[strong "Penalty Kill"] in where they will attempt to kill the time of a penalty without allowing a goal.
+        p The opposing team goes on the #[strong "Power Play"] where they will take advantage of the time they have up a player to score a goal.
+        p A goal by the #[strong opposing team] will #[strong end the Power Play], however a goal by the #[strong offending team] should it occur will #[strong NOT] end a Power Play. If no goals are scored for the duration of the Power Play, the offender will exit the penalty box as play continues.
+        p Penalties in the NHL are assessed the following punishments #[strong depending on serverity]: 
         .penalty-container
             p.minor #[strong 2:00] Minor 
             p.minor #[strong 4:00] Double Minor
             p.major #[strong 5:00] Major 
             p.major #[strong 10:00] Game Misconduct + Game Ejection/Suspension
+        h3 Notes: 
+        p A Double Minor is #[strong two consecutive Minors], A 4:00 Power Play is started, A goal by the opposing team will end the first Power Play, and the second Minor will start with the standard 2:00.  
+        p A Major penalty #[strong CANNOT] be ended early. A goal by the opposing team will #[strong NOT] end the Power Play.
+        p A Game Misconduct does not affect play on the ice other than ejecting the offendeing player, rather it adds 10:00 to the player's history of penalties, and may result in fines or disciplinary action.
 
     .penalty-card-container
         each penalty in penalties   

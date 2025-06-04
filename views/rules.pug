@@ -1,9 +1,21 @@
 extends layout.pug 
 
 mixin ruleCard(rule) 
-    h2 
-        a(href=`rules/${rule.rule}`)= rule.rule 
+    .penalty-card
+        h2 
+            a(href=`rules/${rule.rule}`)= rule.rule 
 
 block content
-    for rule in rules
-        +ruleCard(rule)
+    .penalty-header
+        h1 Basic Rules 
+        p There are many rules and processes to follow when playing hockey. However as a fan it is far easier to understand them than a player abiding to them at times. This page will go over basic rules and processes that will often occur during an average hockey game.
+        p Basic rules and regulations on learnHockey.com are updated as of #[strong June 2025]. Rules and procedures may changed/differ from different eras of hockey and league to league. This site primarily focuses on the rules/penalties of the NHL.
+        h3 Key differences: 
+        h4 PWHL
+        p   The #[strong "Jailbreak Rule"] from the PWHL allows a team who scores short-handed on their Penalty Kill to #[strong end the Power Play early]. The NHL, CHL, or any other major hockey league does not have this rule. For more details on penalty procedures visit #[strong Common Penalties]
+        p   The PWHL uses the #[strong 3-2-1-0] point system for team standings. 3pts for a win, 2pts for a OT win, 1pt for an OT loss, 0pts for an loss.
+        h4 CHL
+        p   The CHL has since required #[strong neck guards] for all skaters after the tragic passing of Adam Johnson.
+    .penalty-card-container
+        for rule in rules
+            +ruleCard(rule)

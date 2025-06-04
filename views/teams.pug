@@ -12,15 +12,18 @@ mixin teamCard(team)
 block content 
     .team_main
         if league==null
-            .league_header  
+            .all-league-header
                 h1 All teams
                 p All hockey teams from USA and Canada across the NHL, PWHL, CHL, WHL, OHL and QMJHL!
         else 
             for singleleague in league
                 .league_header
-                    img(src=`../${singleleague.logo}` width="20%" height="20%")
-                    h1= singleleague.name
-                    p= singleleague.description    
+                    .league-header--logo
+                        img(src=`../${singleleague.logo}` width="100%")
+                    .league-header--info
+                        h1= singleleague.name
+                        h3= singleleague.fullname
+                        p= singleleague.description    
         .team_card_container
             for team in leagueteams 
                 +teamCard(team)

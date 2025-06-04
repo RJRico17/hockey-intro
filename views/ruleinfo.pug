@@ -1,10 +1,14 @@
 extends layout.pug 
 
 mixin ruleCard(rule) 
-    h2= rule.rule 
-    img(src=`../${rule.example}`)
-    p= rule.description
+    .penalty-info-card
+        .penalty-info-gif
+            img(src=`../img/${rule.example}` width="100%" height="100%")
+        .penalty-info-info
+            h2= rule.rule 
+            p= rule.description
 
 block content 
-    for singleRule in rule
-        +ruleCard(singleRule)
+    .penalty-main
+        for singleRule in rule
+            +ruleCard(singleRule)

@@ -4,12 +4,15 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet" href="/css/styles.css") 
+        linkr(el="icon" type="image/x-icon" href="img/hockey-sticks.png")
         title learnHockey
     body 
         header
             h1(class="sitename") 
-                a(href="/home") learnHockey
+                a(href="/home") learnHockey.com
             nav(class="navbar")
+                h2
+                    a(href="/home") Home
                 h2
                     a(href="/leagues") Leagues
                 h2
@@ -17,12 +20,7 @@ html(lang="en")
                 h2
                     a(href="/rules") Rules/Basics
                 h2
-                    a(href="/penalties") Penalties
-            .search
-                form(action="search", method="post") 
-                    .searchbuttons
-                        input(type="text", name="search", placeholder="Search the site")
-                        button(type="submit") Search
+                    a(href="/penalties") Common Penalties
         
         .main
             block content
@@ -31,9 +29,12 @@ html(lang="en")
             .selfCredit
                 h3 Created by: RJ Fredrick Rico
                 .socialIcons
-                    img(src='img/social-icons/github.png' width="40px" height="40px")
-                    img(src='img/social-icons/instagram.png' width="40px" height="40px")
-                    img(src='img/social-icons/linkedin.png' width="40px" height="40px")
+                    a(href="https://github.com/RJRico17")
+                        img(src='img/social-icons/github.png' width="40px" height="40px")
+                    a(href="https://www.instagram.com/__rjjjj__/")
+                        img(src='img/social-icons/instagram.png' width="40px" height="40px")
+                    a(href="https://www.linkedin.com/in/rjfredrickrico/")
+                        img(src='img/social-icons/linkedin.png' width="40px" height="40px")
             .resourceCredit
                 h3 Resources used:
                 .resourceCredits

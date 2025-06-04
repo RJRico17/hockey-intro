@@ -1,21 +1,41 @@
 extends layout.pug 
 
 block content 
+    .home-header
+        h1 Welcome to learnHockey
+        p A beginner friendly site to learn all about Ice Hockey!
     .home-top
         .home-left
-            h1 Welcome to learnHockey
-            p A beginner friendly site to learn all about Ice Hockey!
-            img(src='img/carlton.gif')
+            .home-left-left
+                img(src='img/carlton.gif' width="100%" height="100%")
+            .home-left-right
+                h1 What is learnHockey?
+                p learnHockey is a site created by RJ Fredrick Rico, a Software Developer and Hockey Enthusiast that helps let anyone learn and understand the rules and flow of hockey so that they also can enjoy this game.
+                p This site is dedicated Inang (RJ's mother), who never liked to see RJ get sick, hurt, or injured but found the most joy and entertainment in the most physical and grueling sport of Ice Hockey.
         .home-right
             h1 Quick Links
             .quickCard 
-                h2  
+                h3  
                     a(href='/leagues') Leagues/Teams
             .quickCard 
-                h2  
+                h3  
                     a(href='/rules') Rules
             .quickCard 
-                h2  
+                h3  
                     a(href='/penalties') Penalties
+            .quickCard 
+                h3  
+                    a(href='/teams/info/Toronto%20Maple%20Leafs') Maple Leafs
+            .quickCard 
+                h3  
+                    a(href='/teams/info/Seattle%20Kraken') Kraken
     .home-bottom
-        h2 Highlights:
+        .home-bottom-top
+            .moment-container
+                iframe(width="560" height="315" src="https://www.youtube.com/embed/-nKkxQbFD1g?si=DSXaLMles964snOS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="moment")
+                iframe(width="560" height="315" src="https://www.youtube.com/embed/_8snS5wrj3Y?si=-3aDNptH_BAEThul" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="moment")
+                iframe(width="560" height="315" src="https://www.youtube.com/embed/GQ2RHaosg_g?si=gPx8RNGwLf5obcFb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="moment")
+        .home-bottom-bot
+            h2 RJ's Favorite Hockey Moments 
+            p These are my favorite moments in hockey as of lately, Lets Go Kraken and Go Leafs Go!
+        
